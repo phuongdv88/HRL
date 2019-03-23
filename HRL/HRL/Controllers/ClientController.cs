@@ -12,44 +12,50 @@ namespace HRL.Controllers
     [Route("api/[controller]")]
     public class ClientController : Controller
     {
-        ClientDAL clientDAL;
+        //ClientDAL clientDAL;
+        private IGenericRepository<Client> repository;
         public ClientController(HRLancerContext context)
         {
-            clientDAL = new ClientDAL(context);
+            repository = new GenericRepository<Client>(context);
         }
         // GET: api/<controller>
         [HttpGet]
         public IEnumerable<Client> Index()
         {
-            return clientDAL.GetAllClients();
+            return repository.List;
         }
 
         // GET api/<controller>/5
         [HttpGet("{id}")]
         public Client Details(long id)
         {
-            return clientDAL.GetClientData(id);
+            return repository.FindById(id);
         }
 
         // POST api/<controller>
         [HttpPost]
         public long Create(Client cl)
         {
-            return clientDAL.AddClient(cl);
+            cl.CreatedTime = DateTime.UtcNow;
+            repository.Add(cl);
+            repository.Save();
+            return cl.ClientId;
         }
 
         // PUT api/<controller>
         [HttpPut]
-        public int Edit(Client cl)
+        public void Edit(Client cl)
         {
-            return clientDAL.UpdateClient(cl);
+            repository.Update(cl);
+            repository.Save();
         }
 
         // DELETE api/<controller>/5
         [HttpDelete("{id}")]
-        public int Delete(long id)
+        public void Delete(long id)
         {
-            return clientDAL.DeleteClient(id);
+            repository.Delete(id);
+            repository.Save();
         }
     }
 }

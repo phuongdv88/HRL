@@ -1,39 +1,34 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 
 namespace HRL.Models
 {
-    public class ClientDAL
+    public class ClientRepository : IGenericRepository<Client>
     {
         private readonly HRLancerContext db;
-        public ClientDAL(HRLancerContext dbContext)
+        public ClientRepository(HRLancerContext dbContext)
         {
             db = dbContext ?? throw new ArgumentNullException(nameof(dbContext));
         }
-        public IEnumerable<Client> GetAllClients()
+
+        public IEnumerable<Client> List
         {
-            try
+            get
             {
-                return db.Client.ToList();
-            }
-            catch
-            {
-                throw;
+                return db.Client;
             }
         }
 
-        //To Add new employee record     
-        public int AddClient(Client client)
+        public void Add(Client entity)
         {
             try
             {
-                client.CreatedTime = DateTime.Now;
-                db.Client.Add(client);
+                entity.CreatedTime = DateTime.Now;
+                db.Client.Add(entity);
                 db.SaveChanges();
-                return 1;
             }
             catch
             {
@@ -41,15 +36,13 @@ namespace HRL.Models
             }
         }
 
-        //To Update the records of a particluar employee    
-        public int UpdateClient(Client client)
+        public void Delete(object id)
         {
             try
             {
-                db.Entry(client).State = EntityState.Modified;
+                Client cl = db.Client.Find(id);
+                db.Client.Remove(cl);
                 db.SaveChanges();
-
-                return 1;
             }
             catch
             {
@@ -57,8 +50,7 @@ namespace HRL.Models
             }
         }
 
-        //Get the details of a particular employee    
-        public Client GetClientData(long id)
+        public Client FindById(object id)
         {
             try
             {
@@ -71,15 +63,13 @@ namespace HRL.Models
             }
         }
 
-        //To Delete the record of a particular employee    
-        public int DeleteClient(long id)
+        public void Update(Client entity)
         {
             try
             {
-                Client cl = db.Client.Find(id);
-                db.Client.Remove(cl);
+                db.Entry(entity).State = EntityState.Modified;
                 db.SaveChanges();
-                return 1;
+
             }
             catch
             {
@@ -87,5 +77,9 @@ namespace HRL.Models
             }
         }
 
+        public void Save()
+        {
+            db.SaveChanges();
+        }
     }
 }
