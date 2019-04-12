@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using HRL.Models;
+using Contracts;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,14 +15,20 @@ namespace HRL.Controllers
     {
         //ClientDAL clientDAL;
         private IGenericRepository<Client> repository;
-        public ClientController(HRLancerContext context)
+        private ILoggerManager logger;
+        public ClientController(HRLancerContext context, ILoggerManager logger)
         {
             repository = new GenericRepository<Client>(context);
+            this.logger = logger;
         }
         // GET: api/<controller>
         [HttpGet]
         public IEnumerable<Client> Index()
         {
+            logger.LogInfo("info");
+            logger.LogDebug("Debug");
+            logger.LogWarn("warn");
+            logger.LogError("error");
             return repository.List;
         }
 

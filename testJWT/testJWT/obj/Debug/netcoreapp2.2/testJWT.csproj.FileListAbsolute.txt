@@ -1,0 +1,14 @@
+D:\SwilifeSourceCode\HRLGIT\testJWT\testJWT\bin\Debug\netcoreapp2.2\testJWT.deps.json
+D:\SwilifeSourceCode\HRLGIT\testJWT\testJWT\bin\Debug\netcoreapp2.2\testJWT.runtimeconfig.json
+D:\SwilifeSourceCode\HRLGIT\testJWT\testJWT\bin\Debug\netcoreapp2.2\testJWT.runtimeconfig.dev.json
+D:\SwilifeSourceCode\HRLGIT\testJWT\testJWT\bin\Debug\netcoreapp2.2\testJWT.dll
+D:\SwilifeSourceCode\HRLGIT\testJWT\testJWT\bin\Debug\netcoreapp2.2\testJWT.pdb
+D:\SwilifeSourceCode\HRLGIT\testJWT\testJWT\obj\Debug\netcoreapp2.2\testJWT.csprojAssemblyReference.cache
+D:\SwilifeSourceCode\HRLGIT\testJWT\testJWT\obj\Debug\netcoreapp2.2\testJWT.csproj.CoreCompileInputs.cache
+D:\SwilifeSourceCode\HRLGIT\testJWT\testJWT\obj\Debug\netcoreapp2.2\testJWT.RazorAssemblyInfo.cache
+D:\SwilifeSourceCode\HRLGIT\testJWT\testJWT\obj\Debug\netcoreapp2.2\testJWT.RazorAssemblyInfo.cs
+D:\SwilifeSourceCode\HRLGIT\testJWT\testJWT\obj\Debug\netcoreapp2.2\testJWT.AssemblyInfoInputs.cache
+D:\SwilifeSourceCode\HRLGIT\testJWT\testJWT\obj\Debug\netcoreapp2.2\testJWT.AssemblyInfo.cs
+D:\SwilifeSourceCode\HRLGIT\testJWT\testJWT\obj\Debug\netcoreapp2.2\testJWT.RazorTargetAssemblyInfo.cache
+D:\SwilifeSourceCode\HRLGIT\testJWT\testJWT\obj\Debug\netcoreapp2.2\testJWT.dll
+D:\SwilifeSourceCode\HRLGIT\testJWT\testJWT\obj\Debug\netcoreapp2.2\testJWT.pdb

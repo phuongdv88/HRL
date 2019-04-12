@@ -7,6 +7,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using HRL.Models;
 using Microsoft.EntityFrameworkCore;
+using NLog;
+using System.IO;
 
 namespace HRL
 {
@@ -14,6 +16,7 @@ namespace HRL
     {
         public Startup(IConfiguration configuration)
         {
+            LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
             Configuration = configuration;
         }
 
@@ -23,6 +26,7 @@ namespace HRL
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<HRLancerContext>(options => options.UseSqlServer(Configuration.GetConnectionString("HRLDatabase")));
+            services.ConfigureLoggerService();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             // In production, the React files will be served from this directory
@@ -31,6 +35,8 @@ namespace HRL
                 configuration.RootPath = "ClientApp/build";
             });
         }
+
+       
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

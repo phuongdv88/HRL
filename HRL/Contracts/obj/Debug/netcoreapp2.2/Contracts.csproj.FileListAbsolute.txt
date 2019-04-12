@@ -1,0 +1,9 @@
+D:\SwilifeSourceCode\HRLGIT\HRL\Contracts\bin\Debug\netcoreapp2.2\Contracts.deps.json
+D:\SwilifeSourceCode\HRLGIT\HRL\Contracts\bin\Debug\netcoreapp2.2\Contracts.dll
+D:\SwilifeSourceCode\HRLGIT\HRL\Contracts\bin\Debug\netcoreapp2.2\Contracts.pdb
+D:\SwilifeSourceCode\HRLGIT\HRL\Contracts\obj\Debug\netcoreapp2.2\Contracts.csprojAssemblyReference.cache
+D:\SwilifeSourceCode\HRLGIT\HRL\Contracts\obj\Debug\netcoreapp2.2\Contracts.csproj.CoreCompileInputs.cache
+D:\SwilifeSourceCode\HRLGIT\HRL\Contracts\obj\Debug\netcoreapp2.2\Contracts.AssemblyInfoInputs.cache
+D:\SwilifeSourceCode\HRLGIT\HRL\Contracts\obj\Debug\netcoreapp2.2\Contracts.AssemblyInfo.cs
+D:\SwilifeSourceCode\HRLGIT\HRL\Contracts\obj\Debug\netcoreapp2.2\Contracts.dll
+D:\SwilifeSourceCode\HRLGIT\HRL\Contracts\obj\Debug\netcoreapp2.2\Contracts.pdb

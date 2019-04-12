@@ -1,0 +1,12 @@
+D:\SwilifeSourceCode\HRLGIT\HRL\LoggerService\bin\Debug\netcoreapp2.2\LoggerService.deps.json
+D:\SwilifeSourceCode\HRLGIT\HRL\LoggerService\bin\Debug\netcoreapp2.2\LoggerService.dll
+D:\SwilifeSourceCode\HRLGIT\HRL\LoggerService\obj\Debug\netcoreapp2.2\LoggerService.csprojAssemblyReference.cache
+D:\SwilifeSourceCode\HRLGIT\HRL\LoggerService\obj\Debug\netcoreapp2.2\LoggerService.csproj.CoreCompileInputs.cache
+D:\SwilifeSourceCode\HRLGIT\HRL\LoggerService\obj\Debug\netcoreapp2.2\LoggerService.AssemblyInfoInputs.cache
+D:\SwilifeSourceCode\HRLGIT\HRL\LoggerService\obj\Debug\netcoreapp2.2\LoggerService.AssemblyInfo.cs
+D:\SwilifeSourceCode\HRLGIT\HRL\LoggerService\bin\Debug\netcoreapp2.2\LoggerService.pdb
+D:\SwilifeSourceCode\HRLGIT\HRL\LoggerService\bin\Debug\netcoreapp2.2\Contracts.dll
+D:\SwilifeSourceCode\HRLGIT\HRL\LoggerService\bin\Debug\netcoreapp2.2\Contracts.pdb
+D:\SwilifeSourceCode\HRLGIT\HRL\LoggerService\obj\Debug\netcoreapp2.2\LoggerService.csproj.CopyComplete
+D:\SwilifeSourceCode\HRLGIT\HRL\LoggerService\obj\Debug\netcoreapp2.2\LoggerService.dll
+D:\SwilifeSourceCode\HRLGIT\HRL\LoggerService\obj\Debug\netcoreapp2.2\LoggerService.pdb
