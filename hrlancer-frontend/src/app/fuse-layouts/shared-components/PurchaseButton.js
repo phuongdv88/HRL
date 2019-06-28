@@ -13,7 +13,7 @@ function PurchaseButton()
                 variant="contained"
                 color="secondary">
             <Icon className="text-16 mr-4">contacts</Icon>
-            <span>Contact us</span>
+            <span>Contact Us</span>
         </Button>
     );
 }

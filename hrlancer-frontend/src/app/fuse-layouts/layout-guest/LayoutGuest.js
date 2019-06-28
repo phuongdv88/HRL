@@ -115,7 +115,6 @@ function LayoutGuest(props)
                             <FooterLayoutGuest/>
                         )}
 
-                        <SettingsPanel/>
 
                     </div>
 

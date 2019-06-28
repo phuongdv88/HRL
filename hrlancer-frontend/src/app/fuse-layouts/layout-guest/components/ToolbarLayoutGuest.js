@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-function ToolbarLayout2(props)
+function ToolbarLayoutGuest(props)
 {
     const config = useSelector(({fuse}) => fuse.settings.current.layout.config);
     const toolbarTheme = useSelector(({fuse}) => fuse.settings.toolbarTheme);
@@ -67,4 +67,4 @@ function ToolbarLayout2(props)
     );
 }
 
-export default ToolbarLayout2;
+export default ToolbarLayoutGuest;
