@@ -22,6 +22,7 @@ import {ClassicSearchPageConfig} from './search/classic/ClassicSearchPageConfig'
 import {ModernSearchPageConfig} from './search/modern/ModernSearchPageConfig';
 import {FaqPageConfig} from './faq/FaqPageConfig';
 import {KnowledgeBasePageConfig} from './knowledge-base/KnowledgeBaseConfig';
+import {HomePageConfig} from './home/HomePageConfig';
 
 export const pagesConfigs = [
     LoginPageConfig,
@@ -47,5 +48,6 @@ export const pagesConfigs = [
     ClassicSearchPageConfig,
     ModernSearchPageConfig,
     FaqPageConfig,
-    KnowledgeBasePageConfig
+    KnowledgeBasePageConfig,
+    HomePageConfig
 ];

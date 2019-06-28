@@ -1,11 +1,11 @@
 import React from 'react';
-import {AppBar, Toolbar,} from '@material-ui/core';
+import {AppBar, Toolbar} from '@material-ui/core';
 import {ThemeProvider} from '@material-ui/styles';
 import PurchaseButton from 'app/fuse-layouts/shared-components/PurchaseButton';
 import ContactUs from 'app/fuse-layouts/shared-components/contact';
 import {useSelector} from 'react-redux';
 
-function FooterLayout1(props)
+function FooterLayoutGuest(props)
 {
     const footerTheme = useSelector(({fuse}) => fuse.settings.footerTheme);
 
@@ -16,15 +16,14 @@ function FooterLayout1(props)
 
                     <div className="flex flex-1">
                         <PurchaseButton/>
-                    </div>
-
+                    </div>        
                     <div>
                         <ContactUs/>
-                    </div>
+                    </div>           
                 </Toolbar>
             </AppBar>
         </ThemeProvider>
     );
 }
 
-export default FooterLayout1;
+export default FooterLayoutGuest;

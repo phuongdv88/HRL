@@ -1,11 +1,11 @@
 import React from 'react';
-import {AppBar, Toolbar,} from '@material-ui/core';
+import {AppBar, Toolbar} from '@material-ui/core';
 import {ThemeProvider} from '@material-ui/styles';
 import PurchaseButton from 'app/fuse-layouts/shared-components/PurchaseButton';
-import ContactUs from 'app/fuse-layouts/shared-components/contact';
+import PoweredByLinks from 'app/fuse-layouts/shared-components/PoweredByLinks';
 import {useSelector} from 'react-redux';
 
-function FooterLayout1(props)
+function FooterLayout2(props)
 {
     const footerTheme = useSelector(({fuse}) => fuse.settings.footerTheme);
 
@@ -19,7 +19,7 @@ function FooterLayout1(props)
                     </div>
 
                     <div>
-                        <ContactUs/>
+                        <PoweredByLinks/>
                     </div>
                 </Toolbar>
             </AppBar>
@@ -27,4 +27,4 @@ function FooterLayout1(props)
     );
 }
 
-export default FooterLayout1;
+export default FooterLayout2;
