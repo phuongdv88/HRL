@@ -3,7 +3,6 @@ import {AppBar, Hidden, Icon} from '@material-ui/core';
 import {makeStyles} from '@material-ui/styles';
 import {FuseScrollbars} from '@fuse';
 import clsx from 'clsx';
-import UserNavbarHeader from 'app/fuse-layouts/shared-components/UserNavbarHeader';
 import NavbarFoldedToggleButton from 'app/fuse-layouts/shared-components/NavbarFoldedToggleButton';
 import NavbarMobileToggleButton from 'app/fuse-layouts/shared-components/NavbarMobileToggleButton';
 import Logo from 'app/fuse-layouts/shared-components/Logo';
@@ -39,6 +38,7 @@ function NavbarMobileLayoutGuest(props)
 
                 <Hidden mdDown>
                     <NavbarFoldedToggleButton className="w-40 h-40 p-0"/>
+                    <div>test</div>
                 </Hidden>
 
                 <Hidden lgUp>
@@ -49,8 +49,6 @@ function NavbarMobileLayoutGuest(props)
             </AppBar>
 
             <FuseScrollbars className={clsx(classes.content)}>
-
-                <UserNavbarHeader/>
 
                 <Navigation layout="vertical"/>
             </FuseScrollbars>

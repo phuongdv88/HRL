@@ -69,13 +69,13 @@ function UserMenu(props)
                             <ListItemIcon className="min-w-40">
                                 <Icon>lock</Icon>
                             </ListItemIcon>
-                            <ListItemText className="pl-0" primary="Login"/>
+                            <ListItemText className="pl-0" primary="Đăng nhập"/>
                         </MenuItem>
                         <MenuItem component={Link} to="/register">
                             <ListItemIcon className="min-w-40">
                                 <Icon>person_add</Icon>
                             </ListItemIcon>
-                            <ListItemText className="pl-0" primary="Register"/>
+                            <ListItemText className="pl-0" primary="Đăng ký"/>
                         </MenuItem>
                     </React.Fragment>
                 ) : (

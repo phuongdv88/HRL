@@ -3,6 +3,7 @@ import {Paper, Drawer, Hidden} from '@material-ui/core';
 import {makeStyles, ThemeProvider} from '@material-ui/styles';
 import * as Actions from 'app/store/actions';
 import NavbarMobileLayoutGuest from 'app/fuse-layouts/layout-guest/components/NavbarMobileLayoutGuest';
+import NavbarMobileShowMenuGuest from 'app/fuse-layouts/layout-guest/components/NavbarMobileShowMenuGuest';
 import NavbarLayoutGuest from './NavbarLayoutGuest';
 import {useDispatch, useSelector} from 'react-redux';
 
@@ -44,14 +45,15 @@ function NavbarWrapperLayoutGuest(props)
 
     return (
         <ThemeProvider theme={navbarTheme}>
-
             <Hidden mdDown>
                 <Paper className={classes.navbar} square={true}>
                     <NavbarLayoutGuest/>
                 </Paper>
             </Hidden>
 
+
             <Hidden lgUp>
+            <NavbarMobileShowMenuGuest/>
                 <Drawer
                     anchor="left"
                     variant="temporary"

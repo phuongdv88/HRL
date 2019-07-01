@@ -35,31 +35,8 @@ function ToolbarLayoutGuest(props)
                         </Hidden>
                     )}
 
-                    <div className="flex flex-1">
-                        <Hidden mdDown>
-                            <FuseShortcuts/>
-                        </Hidden>
-                    </div>
 
-                    <div className="flex">
-
-                        <UserMenu/>
-
-                        <div className={classes.separator}/>
-
-                        <FuseSearch/>
-
-                        <Hidden lgUp>
-
-                            <div className={classes.separator}/>
-
-                            <ChatPanelToggleButton/>
-                        </Hidden>
-
-                        <div className={classes.separator}/>
-
-                        <QuickPanelToggleButton/>
-                    </div>
+                        <UserMenu/>                       
 
                 </Toolbar>
             </AppBar>

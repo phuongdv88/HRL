@@ -1,6 +1,4 @@
-import {MaterialUIComponentsNavigation} from 'app/main/documentation/material-ui-components/MaterialUIComponentsNavigation';
 import {authRoles} from 'app/auth';
-
 const navigationConfig = [
     {
         'id'      : 'home',
@@ -24,11 +22,31 @@ const navigationConfig = [
         'url'       : '/page/companies'
     },
     {
-        'id'      : 'contact',
-        'title'   : 'Liên Hệ',
-        'type'    : 'item',
-        'icon'    : 'email',
-        'url'       : '/page/contact'
+        'id'      : 'auth',
+        'title'   : 'Người dùng',
+        'type'    : 'group',
+        'icon'    : 'usaccount_boxer',
+        'children': [
+            {
+                'id'   : 'login',
+                'title': 'Đăng nhập',
+                'type' : 'item',
+                'url'  : '/login',
+                auth   : authRoles.onlyGuest,
+                'icon' : 'lock'
+            },
+            {
+                'id'   : 'register',
+                'title': 'Đăng ký',
+                'type' : 'item',
+                'url'  : '/register',
+                auth   : authRoles.onlyGuest,
+                'icon' : 'person_add'
+            },
+        ]
+    },
+    {
+        'type': 'divider'
     },
     {
         'id'      : 'recruiter',
