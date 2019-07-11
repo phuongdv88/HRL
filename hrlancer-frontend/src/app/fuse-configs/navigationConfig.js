@@ -46,7 +46,8 @@ const navigationConfig = [
         ]
     },
     {
-        'type': 'divider'
+        'type': 'divider',
+        'id'  : 'divider-1'
     },
     {
         'id'      : 'recruiter',
@@ -56,5 +57,6 @@ const navigationConfig = [
         'url'       : '/page/recruiters'
     }
 ];
+
 
 export default navigationConfig;

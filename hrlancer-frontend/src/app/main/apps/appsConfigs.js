@@ -10,8 +10,10 @@ import {ECommerceAppConfig} from './e-commerce/ECommerceAppConfig';
 import {ScrumboardAppConfig} from './scrumboard/ScrumboardAppConfig';
 import {AcademyAppConfig} from './academy/AcademyAppConfig';
 import {NotesAppConfig} from './notes/NotesAppConfig';
+import {JobDescriptionConfig} from './hrlancer/JobDescriptionConfig';
 
 export const appsConfigs = [
+    JobDescriptionConfig,
     AnalyticsDashboardAppConfig,
     ProjectDashboardAppConfig,
     MailAppConfig,
@@ -23,5 +25,5 @@ export const appsConfigs = [
     ECommerceAppConfig,
     ScrumboardAppConfig,
     AcademyAppConfig,
-    NotesAppConfig
+    NotesAppConfig,
 ];

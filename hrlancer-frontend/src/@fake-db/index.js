@@ -19,5 +19,7 @@ import './db/e-commerce-db';
 import './db/scrumboard-db';
 import './db/academy-db';
 import './db/notes-db';
+import './db/jobs-db';
+
 
 mock.onAny().passThrough();

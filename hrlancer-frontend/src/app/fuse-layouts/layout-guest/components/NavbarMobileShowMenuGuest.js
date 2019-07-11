@@ -1,33 +1,23 @@
 import React from 'react';
-import {AppBar, Hidden, Icon} from '@material-ui/core';
+import { Icon } from '@material-ui/core';
 import NavbarMobileToggleButton from 'app/fuse-layouts/shared-components/NavbarMobileToggleButton';
 import Logo from 'app/fuse-layouts/shared-components/Logo';
 
 
-function NavbarMobileLayoutGuest(props)
-{
+function NavbarMobileShowMenuGuest(props) {
     return (
-        <div className="flex flex-col overflow-hidden">
-            <AppBar
-                color="primary"
-                position="static"
-                elevation={0}
-                className="flex flex-row items-center flex-shrink h-64 min-h-64 pl-20 pr-12"
-            >
-                <div className="flex flex-1 pr-8">
-                    <Logo/>
+        <div className="flex flex-1 justify-between items-center w-full h-full container p-0">
+                <div className="flex flex-1 p-2 m-2 my-px">
+                    <Logo />
                 </div>
 
-                <Hidden lgUp>
-                    <NavbarMobileToggleButton className="w-40 h-40 p-0">
-                        <Icon>menu</Icon>
-                    </NavbarMobileToggleButton>
-                </Hidden>
-            </AppBar>
+                <NavbarMobileToggleButton className="w-40 h-40 p-0">
+                    <Icon>menu</Icon>
+                </NavbarMobileToggleButton>
         </div>
     );
 }
 
-export default NavbarMobileLayoutGuest;
+export default NavbarMobileShowMenuGuest;
 
 

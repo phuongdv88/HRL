@@ -33,10 +33,11 @@ const routes = [
         path     : '/',
         exact    : true,
         component: () => <Redirect to="/home"/>
-    },
-    {
-        component: () => <Redirect to="/pages/errors/error-404"/>
     }
+    // },
+    // {
+    //     component: () => <Redirect to="/pages/errors/error-404"/>
+    // }
 ];
 
 export default routes;

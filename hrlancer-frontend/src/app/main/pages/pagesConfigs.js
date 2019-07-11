@@ -49,5 +49,5 @@ export const pagesConfigs = [
     ModernSearchPageConfig,
     FaqPageConfig,
     KnowledgeBasePageConfig,
-    HomePageConfig
+    // HomePageConfig
 ];
